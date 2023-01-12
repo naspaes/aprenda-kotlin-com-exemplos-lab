@@ -17,13 +17,16 @@ data class Formacao(val nome: String, var conteudos: List<ConteudoEducacional>, 
     fun imprimirConteudo (){
      for (tudo in conteudos){
          println ("${tudo.nome} - ${tudo.duracao}")
+         print("horas")
+         println()
+        
          } 
     }
     
     fun imprimirAlunos (){
      for ( all in alunos){
         println(all.nome)
-       }
+        }
     }
 }
 
@@ -76,11 +79,26 @@ fun main() {
     
     // Imprimindo as saídas
     
-    print("Formação DIO: ")
+    
     println("${androidDeveloper.nome} - ${androidDeveloper.nivel}")
     println("Conteúdo Educacional: ")
     println(androidDeveloper.imprimirConteudo())
-    println()
     println("Alunos matriculados: ")
     println(androidDeveloper.imprimirAlunos())
+    
+    println()
+    
+    println("${webDeveloper.nome} - ${webDeveloper.nivel}")
+    println("Conteúdo Educacional: ")
+    println(webDeveloper.imprimirConteudo())
+    println("Alunos matriculados: ")
+    println(webDeveloper.imprimirAlunos())
+    
+    println()
+    
+    println("${javaDeveloper.nome} - ${javaDeveloper.nivel}")
+    println("Conteúdo Educacional: ") 
+    println(javaDeveloper.imprimirConteudo())
+    println("Alunos matriculados: ")
+    println(javaDeveloper.imprimirAlunos())
 }
