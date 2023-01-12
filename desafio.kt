@@ -1,5 +1,6 @@
 // [Template no Kotlin Playground](https://pl.kotl.in/WcteahpyN)
 
+    
 enum class Nivel { Básico, Intermediário, Avançado }
 
 data class Usuario (val nome: String, val email: String) 
@@ -16,8 +17,8 @@ data class Formacao(val nome: String, var conteudos: List<ConteudoEducacional>, 
     
     fun imprimirConteudo (){
      for (tudo in conteudos){
-         println ("${tudo.nome} - ${tudo.duracao}")
-         print("horas")
+         print("${tudo.nome} - ${tudo.duracao}")
+         print(" horas")
          println()
         
          } 
